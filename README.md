@@ -24,16 +24,29 @@
 
 3. DB 테이블 : 
 //사용자한테 보여주는 테이블 위주로 짜기
+
 <BOARD>
+
 게시글 번호(BOARD_ID : NUMBER)-PK
+
 게시글 제목(BOARD_TITLE : VARCHAR2(100))
+
 게시글 내용(BOARD_CONTENT : VARCHAR2(500))
+
 게시글 작성자(MEMBER_ID : VARCHAR2(20))
+
 게시글 작성일(BOARD_DATE_CREATED : TIMESTAMP)
 
+
 <REPLY>
+  
 댓글 번호(REPLY_ID : NUMBER)
+
 게시글 번호(BOARD_ID : NUMBER)-PK
+
 댓글 작성자(MEMBER_ID : VARCHAR2(20))
+
 댓글 내용(REPLY_CONTENT : VARCHAR2(100))
+
 댓글 작성일(REPLY_DATE_CREATED : TIMESTAMP)
+
